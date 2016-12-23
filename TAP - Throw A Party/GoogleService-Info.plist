@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>506900481216-je1np1lqajenf19d61b8apukndoobq8d.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.506900481216-je1np1lqajenf19d61b8apukndoobq8d</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCkFp04F3Ys7C_1tkjGE-mVsxKmkarmt10</string>
+	<key>GCM_SENDER_ID</key>
+	<string>506900481216</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.NathanLevitt.TAP---Throw-A-Party</string>
+	<key>PROJECT_ID</key>
+	<string>tap-throw-a-party-d355e</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tap-throw-a-party-d355e.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:506900481216:ios:bdb332b72292189e</string>
+	<key>DATABASE_URL</key>
+	<string>https://tap-throw-a-party-d355e.firebaseio.com</string>
+</dict>
+</plist>

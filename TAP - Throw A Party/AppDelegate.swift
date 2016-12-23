@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +17,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Setup Firebase
+        FIRApp.configure()
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+//        let partiesViewController = UINavigationController(rootViewController: PartiesTabBarController())
+//        partiesViewController.navigationBar.isTranslucent = false
+//        partiesViewController.navigationBar.backgroundColor = .white
+//        partiesViewController.navigationBar.tintColor = .tap
+//        window?.rootViewController = partiesViewController
+        let loginViewController = LoginViewController()
+        window?.rootViewController = loginViewController
+        window?.makeKeyAndVisible()
+        
+        // Status Bar Text Color
+        UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent
+        
+        // Add red background to status bar
+        setStatusBarBackgroundColor(color: .tap)
+        
+        // Get rid of the 1px line under navigation bars and tab bar
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+//        UITabBar.appearance().shadowImage = UIImage()
+//        UITabBar.appearance().backgroundImage = UIImage()
+        UITabBar.appearance().backgroundColor = .white
+        UITabBar.appearance().tintColor = .tap
+        
         return true
+    }
+    
+    func setStatusBarBackgroundColor(color: UIColor) {
+        
+        guard let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView else { return }
+        
+        statusBar.backgroundColor = color
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
